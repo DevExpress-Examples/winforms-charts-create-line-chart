@@ -1,6 +1,7 @@
 Imports System
 Imports System.Windows.Forms
 Imports DevExpress.XtraCharts
+Imports System.Drawing
 
 ' ...
 Namespace Series_LineChart
@@ -28,15 +29,20 @@ Namespace Series_LineChart
             ' as it is qualitative, by default.
             series1.ArgumentScaleType = ScaleType.Numerical
             ' Access the view-type-specific options of the series.
+            CType(series1.View, LineSeriesView).MarkerVisibility = DevExpress.Utils.DefaultBoolean.True
+            CType(series1.View, LineSeriesView).LineMarkerOptions.Size = 20
             CType(series1.View, LineSeriesView).LineMarkerOptions.Kind = MarkerKind.Triangle
             CType(series1.View, LineSeriesView).LineStyle.DashStyle = DashStyle.Dash
             ' Access the view-type-specific options of the series.
-            CType(lineChart.Diagram, XYDiagram).Rotated = True
+            CType(lineChart.Diagram, XYDiagram).AxisY.Interlaced = True
+            CType(lineChart.Diagram, XYDiagram).AxisY.InterlacedColor = Color.FromArgb(20, 60, 60, 60)
+            CType(lineChart.Diagram, XYDiagram).AxisX.NumericScaleOptions.AutoGrid = False
+            CType(lineChart.Diagram, XYDiagram).AxisX.NumericScaleOptions.GridSpacing = 1
             ' Hide the legend (if necessary).
             lineChart.Legend.Visibility = DevExpress.Utils.DefaultBoolean.False
             ' Add a title to the chart (if necessary).
             lineChart.Titles.Add(New ChartTitle())
-            lineChart.Titles(0).Text = "A Line Chart"
+            lineChart.Titles(0).Text = "Line Chart"
             ' Add the chart to the form.
             lineChart.Dock = DockStyle.Fill
             Me.Controls.Add(lineChart)
