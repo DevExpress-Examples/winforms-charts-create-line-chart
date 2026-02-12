@@ -33,7 +33,7 @@ Note that you can cast the [`View`](https://docs.devexpress.com/CoreLibraries/De
 * [How to Plot an XY Series with a Histogram in the WinForms Chart](https://github.com/DevExpress-Examples/winforms-charts-plot-xy-series-with-histogram)
 * [How to Implement the Best Fit Function, and Apply it to a Chart's Series](https://github.com/DevExpress-Examples/winforms-charts-apply-the-best-fit-function-to-a-series)
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-charts-create-line-chart&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-charts-create-line-chart&~~~was_helpful=no)
 
